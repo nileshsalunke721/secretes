@@ -3,7 +3,7 @@ import requests
 import pandas as pd
 
 
-token = os.getenv("api_key")
+token = os.getenv("API_KEY")
 if token == "1234":
     response=requests.get("https://jsonplaceholder.typicode.com/comments")
     data=response.json()
